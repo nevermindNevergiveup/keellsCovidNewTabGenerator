@@ -167,11 +167,13 @@
       window.ifTimed = 0;
 
       function openUrlOnClick(x) {
+        window.open("https://int.keellssuper.net/", "_blank");
+
         setInterval(openUrl, x); // Wait 5 seconds
         var y = document.getElementById("limit").value;
 
         function openUrl() {
-          if (y !== 0) {
+          if (y !== 1) {
             var redirectWindow = window.open(
               "https://int.keellssuper.net/",
               "_blank"
